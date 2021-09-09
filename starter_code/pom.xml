@@ -84,9 +84,21 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.25</version>
         </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.splunk/splunk &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.splunk</groupId>-->
+<!--            <artifactId>splunk</artifactId>-->
+<!--            <version>1.6.5.0</version>-->
+<!--        </dependency>-->
 
     </dependencies>
-
+    <repositories>
+        <repository>
+            <id>splunk-artifactory</id>
+            <name>Splunk Releases</name>
+            <url>http://splunk.jfrog.io/splunk/ext-releases-local</url>
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>
