@@ -4,6 +4,7 @@ import com.example.demo.TestUtils;
 import com.example.demo.model.persistence.UserOrder;
 import com.example.demo.model.persistence.repositories.OrderRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
+import javassist.tools.web.BadHttpRequest;
 import org.assertj.core.util.Lists;
 import org.junit.Before;
 import org.junit.Test;
@@ -40,7 +41,7 @@ public class OrderControllerTest {
     }
 
     @Test
-    public void test_submit() {
+    public void test_submit() throws BadHttpRequest {
         BigDecimal expected = new BigDecimal(1000);
         final ResponseEntity<UserOrder> response = orderController.submit("user_1");
         UserOrder userOrder = response.getBody();

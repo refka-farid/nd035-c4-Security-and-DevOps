@@ -2,6 +2,7 @@ package com.example.demo.controllers;
 
 import java.util.List;
 
+import javassist.tools.web.BadHttpRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,11 +33,13 @@ public class OrderController {
 	private OrderRepository orderRepository;
 
 	@PostMapping("/submit/{username}")
-	public ResponseEntity<UserOrder> submit(@PathVariable String username) {
+	public ResponseEntity<UserOrder> submit(@PathVariable String username) throws BadHttpRequest {
 		User user = userRepository.findByUsername(username);
 		if(user == null) {
 			log.error("ORDER : user {} not found. Fail submit order request ",username);
-			return ResponseEntity.notFound().build();
+			log.error("ORDER: BAD_HTTP_REQUEST_EXCEPTION Exception{} Fail request Submit Order ", BadHttpRequest.class);
+			throw new BadHttpRequest();
+//			return ResponseEntity.notFound().build();
 		}
 		UserOrder order = UserOrder.createFromCart(user.getCart());
 		orderRepository.save(order);

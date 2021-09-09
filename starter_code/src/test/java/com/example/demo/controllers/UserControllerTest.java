@@ -5,6 +5,7 @@ import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
 import com.example.demo.model.requests.CreateUserRequest;
+import javassist.tools.web.BadHttpRequest;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -38,7 +39,7 @@ public class UserControllerTest {
     }
 
     @Test
-    public void create_user_happy_path() {
+    public void create_user_happy_path() throws BadHttpRequest {
         //arrange
         when(encoder.encode("testPassword")).thenReturn("thisIsHashed");
         CreateUserRequest request = new CreateUserRequest();
@@ -80,7 +81,7 @@ public class UserControllerTest {
     }
 
     @Test
-    public void test_findByUserName() {
+    public void test_findByUserName() throws BadHttpRequest {
         //arrange
         long id = 333;
         User user = new User();
