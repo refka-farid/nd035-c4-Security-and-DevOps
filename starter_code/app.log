@@ -1,0 +1,38 @@
+2021-09-09 02:15:11.207  INFO 29730 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on Houssems-MacBook-Pro.local with PID 29730 (started by houssemzaier in /Users/houssemzaier/Desktop/OSS/web-java-developper-udacity/4-fourthProject/e-commerce-application/nd035-c4-Security-and-DevOps/starter_code)
+2021-09-09 02:15:11.209  INFO 29730 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2021-09-09 02:15:12.202  INFO 29730 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-09-09 02:15:12.285  INFO 29730 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 4 repository interfaces.
+2021-09-09 02:15:13.234  INFO 29730 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fecca244] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-09-09 02:15:13.564  INFO 29730 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-09 02:15:14.011  INFO 29730 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-09 02:15:14.129  INFO 29730 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-09-09 02:15:14.286  INFO 29730 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-09-09 02:15:14.288  INFO 29730 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-09-09 02:15:14.582  INFO 29730 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-09-09 02:15:14.861  INFO 29730 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-09-09 02:15:16.033  INFO 29730 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-09 02:15:17.064  WARN 29730 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-09 02:15:17.245  INFO 29730 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bd703bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@2634d000, org.springframework.security.web.header.HeaderWriterFilter@2ba08f26, org.springframework.web.filter.CorsFilter@2a9565d7, org.springframework.security.web.authentication.logout.LogoutFilter@ef220e4, com.example.demo.security.JWTAuthenticationFilter@2e38d44e, com.example.demo.security.JWTAuthenticationVerficationFilter@6c25123e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@50b4e7b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53551fef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f5c0eda, org.springframework.security.web.session.SessionManagementFilter@50b624da, org.springframework.security.web.access.ExceptionTranslationFilter@599310ab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77e5c765]
+2021-09-09 02:15:17.833  INFO 29730 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-09-09 02:15:18.190  INFO 29730 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 12.314 seconds (JVM running for 14.219)
+2021-09-09 02:15:18.634  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to remove item with id 0 from cart
+2021-09-09 02:15:18.635  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to remove item with id 1 from cart
+2021-09-09 02:15:18.635  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to remove item with id 2 from cart
+2021-09-09 02:15:18.636  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to remove item with id 3 from cart
+2021-09-09 02:15:18.636  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to remove item with id 4 from cart
+2021-09-09 02:15:18.636  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:All items successfully removed from Cart
+2021-09-09 02:15:18.646  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to add item with id 0 to Cart
+2021-09-09 02:15:18.646  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to add item with id 1 to Cart
+2021-09-09 02:15:18.646  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to add item with id 2 to Cart
+2021-09-09 02:15:18.646  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to add item with id 3 to Cart
+2021-09-09 02:15:18.646  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:Attempting to add item with id 4 to Cart
+2021-09-09 02:15:18.647  INFO 29730 --- [main] c.e.demo.controllers.CartController      : CART:All items successfully added from Cart
+2021-09-09 02:15:18.736  INFO 29730 --- [main] c.e.demo.controllers.OrderController     : ORDER : Order for useruser_1 Success submit order request 
+2021-09-09 02:15:18.740  INFO 29730 --- [main] c.e.demo.controllers.OrderController     : ORDER:Order history for user user_1 successfully retrieved
+2021-09-09 02:15:18.781  INFO 29730 --- [main] c.e.demo.controllers.UserController      :  USER : Success request create usertest
+2021-09-09 02:15:18.792  INFO 29730 --- [Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-09-09 02:15:18.795  INFO 29730 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-09 02:15:18.797  INFO 29730 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-09 02:15:18.800  INFO 29730 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
